@@ -84,7 +84,8 @@ class Solution:
                             cur_dir = 0
                         else:
                             cur_dir = cur_dir + 1
-            print(cur_pos)
+                if cur_pos[0] == 0 and cur_pos[1] == 0:
+                    return True
             return cur_pos[0] == 0 and cur_pos[1] == 0
                     
         
